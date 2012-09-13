@@ -1,0 +1,95 @@
+/*Local Style*/
+@font-face
+{
+font-family: 'didot';
+/*src: local('☺'),
+		url('type/comic.ttf') format('truetype');*/		
+	src: local('☺'),
+		url('type/TheanoDidot-Regular.ttf') format('truetype'),
+		url('TheanoDidot-Regular-webfont')format('embedded-opentype');	
+    
+   /* url('TheanoDidot-Regular-webfont.eot'); /* IE9+ */
+}
+
+div.description{
+	/*color:#00008B;*/
+	font-family: didot, sans-serif;
+}	
+
+#accordion 
+{
+	float:left;
+	width:150px;
+	padding-left: 40px; 
+}
+#content
+{
+	float:right;
+	width:765px; 
+	/*padding-left:35px;  */
+}
+#wrapper
+{
+	width:1035px; /*was 1025*/
+}
+#buffer
+{
+	width:100px;  
+}
+.inline{
+	display: inline; 
+	white-space: pre-wrap;
+}
+#list
+{
+	text-align: left;  
+	font-size:13px; 
+}
+p
+{
+	/*color:#00008B;*/
+	font-family: "didot", sans-serif; 
+	
+}
+h3
+{
+	font-family:"didot", sans-serif;
+/*	color:#00008B; */
+}
+li
+{
+	font-family:"didot", sans-serif;
+}
+body
+{
+	background-color:#F5F5F5;
+}
+#test{
+	font-family:"didot",sans-serif;
+/*	color:#00008B;*/ 
+	overflow: hidden;
+}
+#name
+{
+	font-family:"didot",sans-serif;
+/*	color:#00008B; 	*/	
+	font-size:28px;
+	padding-left: 40px;
+}
+#title
+{
+	font-family:"didot",sans-serif;
+	/*color:#00008B;*/ 		
+	font-size:22px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #000000;
+	margin-left: 40px;
+	width: 190px;
+	
+}
+#permTitle
+{
+	font-family:"didot",sans-serif;
+	/*color:#00008B; 		*/
+}
