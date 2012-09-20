@@ -7,17 +7,19 @@
 		<title>Robert Gregson-Filmmaker</title>
 		<meta name="generator" content="Studio 3 http://aptana.com/">
 		<meta name="author" content="TC">
-		<!-- Paste this code into the HEAD section of your HTML document.
-     You may need to change the path of the file.  -->
+		<!-- JS third party include files, jQuery, flash API,   -->
 		<script type="text/javascript" src="js/expandingMenu.js"></script>
 		<script type="text/javascript"src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-		<script type="text/javascript" src="js/clickedOn.js"></script>
-		<script type="text/javascript" src="js/hoverOver.js"></script>
 		<script type="text/javascript" src="js/froogaloop.js"></script>
 		<script type="text/javascript" src="js/froogaloop.min.js"></script>
 		<script type="text/javascript" src="js/swfobject.js"></script>
 		
+		<!-- JS custom files -->
+		<script type="text/javascript" src="js/clickedOn.js"></script>
+		<script type="text/javascript" src="js/hoverOver.js"></script>
+		
+		<!-- CSS Style sheets -->
 		<link rel = "stylesheet" type="text" href="css/style.css"/>
 		<link rel = "stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css"/>
 		<link rel = "stylesheet" type="text/css" href="css/localStyle.css"/>
@@ -30,16 +32,16 @@
 </br>
 <div id="wrapper">
 <div id="accordion">
-  <li><h3 a href="#" onclick="aboutClicked()">About</a></h3></li>
+  <li><h3 a href="#" onclick="sideBarClicked('about')">About</a></h3></li>
   <h3 a href="#">Work</a></h3>
  
     <ol id="list">
-      <li><a href="#" onclick="directionClicked()">Directing</a></li>
-      <li><a href="#" onclick="editingClicked()">Editing</a></li>
-      <li><a href="#" onclick="cinematographyClicked()">Cinematography</a></li>
+      <li><a href="#" onclick="sideBarClicked('direction')">Directing</a></li>
+      <li><a href="#" onclick="sideBarClicked('editing')">Editing</a></li>
+      <li><a href="#" onclick="sideBarClicked('cinematography')">Cinematography</a></li>
     </ol>
  
-  <h3 a href="#" onclick="contactClicked()">Contact</a></h3>
+  <h3 a href="#" onclick="sideBarClicked('contact')">Contact</a></h3>
 </div>
 
 
@@ -50,7 +52,13 @@
 	<div id="about" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			Robert Gregson is a NYC-based filmmaker. His films have been featured at Anthology Film Archives, Avignon Film Festival, University of Mary Washington Film Festival, and the Rappahannock Independent Film Festival. After graduation, Gregson worked at Martin Scorsese's World Cinema Foundation as an assistant to Executive Director Kent Jones. He also began directing, editing, and shooting freelance shorts, music videos, and commercials. In 2010, Gregson started working regularly with Shoebox Story Productions. Under the Shoebox banner he directed his first documentary feature, Demon Fighters, which is currently in postproduction.
+			Robert Gregson is a NYC-based filmmaker. His films have been featured at Anthology Film Archives, Avignon Film
+			 Festival, University of Mary Washington Film Festival, and the Rappahannock Independent Film Festival. He 
+			 writes, directs, edits, and shoots short and long-form media.
+			</br></br>
+			Currently, he is in postproduction on Demon Fighters, a feature documentary he produced and directed with 
+			Shoebox Story Productions and is also in post on Just a Phase, a short documentary. He recently finished a 
+			fictional short film, Advice, and is in preproduction on his next short. 
 		</p>
 		</br>
 	</div>
@@ -60,15 +68,42 @@
 		<p>
 			 <a href="#"  onclick="filmClicked('cinematographyReel','Cinematography Reel')" onmouseover="showName('Cinematography Reel','cine','cinematography color.JPG','movieDescription','cineDescription')" onmouseout="removeName('cine','cinematography bw.JPG','movieDescription')">
 			 <img name="cine" height=113 width=200 src="images/cinematography bw.JPG"></a>
-			 <div id="movieDescription" class="description"></div>
+			 
+		 	 <a href="#" 
+		 	onclick="filmClicked('rxrEp1','Route by Route - Episode 1')" 
+		 	onmouseover="showName('Route By Route - Episode 1','rxpEp1Img','RBRcolor.jpg','movieDescriptionForEditing','rxrEp1Description')" 
+		 	onmouseout="removeName('rxrImg','RBRbw.jpg','movieDescriptionForEditing')">
+			 <img name="rxrEp1Img" height=200 width=200 src="images/RBRbw.jpg"></a>
+			 
+			 <a href="#" onclick="filmClicked('rxrreel','Route By Route - Sizzle Reel')"
+			 nmouseover="showName('Route by Route - Sizzle Reel','rxpreel','RBRcolor.jpg','movieDescriptionForEditing','rxrReelDescription')" 
+			 onmouseout="removeName('rxrreelImg','RBRbw.jpg','movieDescriptionForEditing')">
+			 <img name="rxrreelImg" height=200 width=200 src=""></a>
+			 
+			 <a href="#" onclick="filmClicked('adweekNewMovel','Adweek New Model Agency')" 
+			 onmouseover="showName('Adweek New Model Agency','adweekNewModel','SRcolor.jpg','movieDescriptionForEditing','adweekNewModelDescription') 
+			 onmouseout="removeName('adweekNewModelImg','adweekNewModel.jpg','movieDescriptionForEditing')">
+			 <img name="adweekNewModelImg" height=200 width=200 src="images/SRbw.jpg"></a>
+			 
+			 <a href="#" onclick="filmClicked('adweekSixQues','Adweek Six Questions')" 
+			 onmouseover="showName('AdWeek Six Questions','adweekSixQues','Robcolor.jsp','movieDescriptionForEditing','adweekSixQuestDescription') 
+			 onmouseout="removeName('adweekSixQues','Robbw.jpg',movieDescriptionForEditing'')">
+			 <img name="adweekSixQuesImg" height=200 width=200 src="images/Robbw.jpg"></a>
+			 
+			 <a href="#" onclick="filmClicked('adweekDave','Adweek Size Questions')"
+			 onmouseover="showName('Adweek Six Questions','CarLynchcolor.jpg','movieDescriptionForEditing','adweekDave') 
+			 onmouseout="removeName('Adweek Six Questions','CarLynchbw.jpg','movieDescriptionForEditing')">
+			 <img name="adweekDave" height=200 width=200 src="images/CarLynchbw.jpg"></a>
+			 
+ 			 <div id="movieDescription" class="description"></div>
 			 </br>
 		</p>
 	</div>
 	<div id="direction" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			 <a href="#" onclick="filmClicked('demonFighters','Demon Fighters')" onmouseover="showName('Demon Fighters','df','demon fighters color.jpg','movieDescriptionForDirection','demonFightersDescription')" onmouseout="removeName('df','demon fighters bw.jpg','movieDescriptionForDirection')">
-			 <img name="df" heigh=200 width=200 src="images/demon fighters bw.jpg"></a>
+			<a href="#" onclick="filmClicked('demonFighters','Demon Fighters')" onmouseover="showName('Demon Fighters','df','demon fighters color.jpg','movieDescriptionForDirection','demonFightersDescription')" onmouseout="removeName('df','demon fighters bw.jpg','movieDescriptionForDirection')">
+			 <img name="df" heigh=200 width=200 src="images/demon fighters bw.jpg"></a> 
 			 
 			 <a href="#" onclick="filmClicked('basedOnBefore','Dave Beck-Based on Before')" onmouseover="showName('Dave Beck-Based on Before','bob','based on before color.JPG','movieDescriptionForDirection','basedOnBeforeDescription')" onmouseout="removeName('bob','based on before bw.JPG','movieDescriptionForDirection')">
 			 <img name="bob" heigh=200 width=200 src="images/based on before bw.JPG"></a>
@@ -88,10 +123,19 @@
 			 <a href="#" onclick="filmClicked('leanStart','Lean Startup Machine')" onmouseover="showName('Lean Startup Machine','LSM','lean startup machine color.JPG','movieDescriptionForDirection','leanStartUpDescription')" onmouseout="removeName('LSM','lean startup machine bw.JPG','movieDescriptionForDirection')">			 
 			 <img name="LSM" heigh=200 width=200 src="images/lean startup machine bw.JPG"></a>
 			 
-			  <a href="#" onclick="filmClicked('jw','Justice Woman')" onmouseover="showName('Justice Woman','jwImg','justicewomanCOLOR.jpg','movieDescriptionForDirection','jwDescription')" onmouseout="removeName('jwImg','justicewomanBW.jpg','movieDescriptionForDirection')">			 
+			  <a href="#" onclick="filmClicked('jw','Justice Woman')" 
+			  	onmouseover="showName('Justice Woman','jwImg','justicewomanCOLOR.jpg','movieDescriptionForDirection','jwDescription')" 
+			  	onmouseout="removeName('jwImg','justicewomanBW.jpg','movieDescriptionForDirection')">			 
 			 <img name="jwImg" heigh=200 width=200 src="images/justicewomanBW.jpg"></a>
 			 
+			 <a href="#" onclick="filmClicked('advice','Advice')" 
+			 			onmouseover="showName('Advice','adviceImg','Advicecolor.jpg','movieDescriptionForDirection','adviceDescription')" 
+			 			onmouseout="removeName('adviceImg','Advicebw.jpg','movieDescriptionForDirection')" >
+			 <img name="adviceImg" height=200 width=200 src="images/Advicebw.jpg"></a>
+			 
 			 <div id="movieDescriptionForDirection" class="description"></div>
+			 
+			 
 			 </br> 
 		</p>
 	</div>
@@ -110,7 +154,9 @@
 			 <a href="#" onclick="filmClicked('bnaiZionVillage','Bnai Zion - Ahava Village')" onmouseover="showName('Bnai Zion - Ahava Village','zionVillage','bnaizionAHAVAcolor.jpg','movieDescriptionForEditing','bnaiZionVillageDescription')" onmouseout="removeName('zionVillage','bnaizionAHAVAbw.jpg','movieDescriptionForEditing')">
 			 <img name="zionVillage" heigh=200 width=200 src="images/bnaizionAHAVAbw.jpg"></a>		
 			 
-			<a href="#" onclick="filmClicked('levoGetMoving','Levo League \x22Get Moving\x22')" onmouseover="showName('Levo League \x22Get Moving\x22','levoImg','levoFINALcolor.jpg','movieDescriptionForEditing','levoDescription')" onmouseout="removeName('levoImg','levoFINALbw.jpg','movieDescriptionForEditing')">
+			<a href="#" onclick="filmClicked('levoGetMoving','Levo League \x22Get Moving\x22')" 
+				onmouseover="showName('Levo League \x22Get Moving\x22','levoImg','levoFINALcolor.jpg','movieDescriptionForEditing','levoDescription')" 
+				onmouseout="removeName('levoImg','levoFINALbw.jpg','movieDescriptionForEditing')">
 			 <img name="levoImg" heigh=200 width=200 src="images/levoFINALbw.jpg"></a>	
 			 
 			 
@@ -128,10 +174,14 @@
 			</br>
 		</p>
 	</div>
+<!--BEGIN DIRECTION DESCRIPTIONS-->
 	<div id="demonFighters" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			<iframe id="demonFightersVid" class="vim" src="http://player.vimeo.com/video/20112538?api=1&amp;title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/20112538"></a> 		
+			<!-- Currently Removed:working on new trailer <iframe id="demonFightersVid" class="vim" 
+					src="http://player.vimeo.com/video/20112538?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
+					width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen><
+					/iframe><p><a href="http://vimeo.com/20112538"></a> -->	
 			<div id="demonFightersDescription" class="description">
 			Director/Producer</br>
 			Feature Documentary</br>
@@ -142,6 +192,7 @@
 			</div>
 		</p>
 	</div>
+
 	<div id="basedOnBefore" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
@@ -250,7 +301,27 @@
 		</p>
 	</div>
 	
-	
+	<div id="advice" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all"></h3>
+		<p>
+			</br>
+				<!-- IMAGE GOES HERE -->
+			</br>
+			<div id="adviceDescription" class="description">
+				Writer/Director/Editor</br>
+				Short File
+				</br>
+				<img src="images/Advicecolor.jpg">
+				</br>
+				</br>
+					Sometimes breaking up is easier with a gun.
+			</div>
+		</p>
+	</div>
+		
+<!-- END DIRECTING DESCRIPTIONS --> 
+<!-- BEGIN EDITING DESCRIPTIONS -->
+
 	<div id="editingReel" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
@@ -277,24 +348,15 @@
 	<div id="bnaiZion" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			<!--OLD STUFF BEGIN--><!--
-			<iframe id="ytplayerForZion" width="560" height="315" src="http://www.youtube.com/embed/x6jsnaYsh0I?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-			</br>
-			 <!-- OLD STUFF END-->
-			 <!--NEW STUFF BEGIN-->
 			 <div id="ytplayer">
 			 	<p>You will need Flash 8 or better to view content</p>
 			 </div>
-		<!--	<a href="javascript:void(0);" onclick="stopYTVid();">stop</a> -->
 			<script type="text/javascript">
 				var params = {allowScriptAccess:"always"};
 				var atts = {id: "myytplayer"}
 				swfobject.embedSWF(
 				"http://www.youtube.com/v/x6jsnaYsh0I&enablejsapi=1&playerapiid=ytplayer", "ytplayer", "560", "315", "8", null, null, params,atts);
 			</script>
-	
-			 
-			 <!--NEW STUFF END-->
 			</br>		
 			</br>
 			<div id="bnaiZionDescription" class="description">
@@ -327,18 +389,108 @@
 			</br>
 			Video shot and edited for the launch of Levo League.</div>
 	</div>
-	
-	
+<!-- END EDITING DESCRIPTIONS -->	
+<!-- BEGIN CINEMATOGRAPHY DESCRIPTIONS -->
 	
 	<div id="cinematographyReel" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			<iframe  id="cineVid" class="vim" src="http://player.vimeo.com/video/28338113?api=1&amp;title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
-		<!--<iframe id="tide" class="vim" src="http://player.vimeo.com/video/1747304?api=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="725" height="408"></iframe> -->
+			<iframe  id="cineVid" class="vim" src="http://player.vimeo.com/video/28338113?api=1&amp;title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 		
 			<div id="cineDescription" class="description">Compilation of narrative and documentary work.</div>
 		</p>
 	</div>
 	
+	<div id="rxrEp1" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<!-- ADD YOUTUBE VIDEO -->
+			</p>
+			<div id="rxrEp1Description" class="description"> 
+				Cinematographer/Editor</br>
+				Web Series Sizzle Reel 
+				</br>
+				</br>
+				Episode 1: Charity Rose Thielen
+			</div>
+	</div>
+	
+	<div id="rxrscreel" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="rxrscreelVid" class="vim" src="http://player.vimeo.com/video/45451132?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  
+				width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="rxrscreelDescription" class="description"> 
+				Cinematographer/Editor</br>
+				Web Series Sizzle Reel 
+				</br>
+				</br>
+				Sizzle Reel for Route by Route web series
+			</div>
+	</div>
+	
+	<div id="adweekNewModel" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="adweekNewModelVid" class="vim" src="http://player.vimeo.com/video/459837828api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="adweekNewModelDescription" class="description"> 
+				Cinematographer/Editor</br>
+				Online Series
+				</br>
+				</br>
+				Piece Produced for Adweek featuring Sub Rosa.
+			</div>
+	</div>
+	
+	<div id="adweekSixQues" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="adweekSixQuesVid" class="vim" src="http://player.vimeo.com/video/47371370?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="adweekSiXQuesDescription" class="description"> 
+				Cinematographer/Editor</br>
+				Online Series 
+				</br>
+				</br>
+				Piece Produced for Adweek featuring Rob Schwartz. 
+			</div>
+	</div>
+	
+	<div id="aroma" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="adweekSixQuesVid" class="vim" src="http://player.vimeo.com/video/49785586?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="adweekSiXQuesDescription" class="description"> 
+				Cinematographer</br>
+				Web Commerical
+				</br>
+				</br>
+				Commerical shot for Aromachology 
+			</div>
+	</div>
+	
+	
+	
+	
+	<div id="adweekSixDave" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="adweekSixDaveVid" class="vim" src="http://player.vimeo.com/video/44003476?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="adweekSixDaveDescription" class="description"> 
+				Cinematographer/Editor</br>
+				Online Series 
+				</br>
+				</br>
+				Piece Produced for Adweek featuring Dave Damman. 
+			</div>
+	</div>
+	
+	
+	
+<!-- END CINEMATOGRAPHY DESCRIPTIONS -->
 </div>
 </div>
 </div>
@@ -363,6 +515,14 @@
 	$("#bnaiZionVillage").hide()
 	$("#levoGetMoving").hide()
 	$("#jw").hide()
+	$("#advice").hide()
+	$("#aroma").hide()
+	$("#rxrscreel").hide()
+	$("#rxrEp1").hide()
+	$("#rxrreel").hide()
+	$("#adweekNewModel").hide()
+	$("#adweekSixQues").hide()
+	$("#adweekSixDave").hide()
 	$(function() {$("#about").show();});
 	
 	</script>
