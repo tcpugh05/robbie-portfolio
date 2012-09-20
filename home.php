@@ -66,34 +66,36 @@
 	<div id="cinematography" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			 <a href="#"  onclick="filmClicked('cinematographyReel','Cinematography Reel')" onmouseover="showName('Cinematography Reel','cine','cinematography color.JPG','movieDescription','cineDescription')" onmouseout="removeName('cine','cinematography bw.JPG','movieDescription')">
+			 <a href="#"  onclick="filmClicked('cinematographyReel','Cinematography Reel')" 
+			 onmouseover="showName('Cinematography Reel','cine','cinematography color.JPG','movieDescription','cineDescription')" 
+			 onmouseout="removeName('cine','cinematography bw.JPG','movieDescription')">
 			 <img name="cine" height=113 width=200 src="images/cinematography bw.JPG"></a>
 			 
 		 	 <a href="#" 
 		 	onclick="filmClicked('rxrEp1','Route by Route - Episode 1')" 
-		 	onmouseover="showName('Route By Route - Episode 1','rxpEp1Img','RBRcolor.jpg','movieDescriptionForEditing','rxrEp1Description')" 
-		 	onmouseout="removeName('rxrImg','RBRbw.jpg','movieDescriptionForEditing')">
-			 <img name="rxrEp1Img" height=200 width=200 src="images/RBRbw.jpg"></a>
+		 	onmouseover="showName('Route By Route - Episode 1','rxrEp1Img','charitycolor.jpg','movieDescription','rxrEp1Description')" 
+		 	onmouseout="removeName('rxrEp1Img','charitybw.jpg','movieDescription')">
+			 <img name="rxrEp1Img"  width=200 src="images/charitybw.jpg"></a>
 			 
 			 <a href="#" onclick="filmClicked('rxrreel','Route By Route - Sizzle Reel')"
-			 nmouseover="showName('Route by Route - Sizzle Reel','rxpreel','RBRcolor.jpg','movieDescriptionForEditing','rxrReelDescription')" 
-			 onmouseout="removeName('rxrreelImg','RBRbw.jpg','movieDescriptionForEditing')">
-			 <img name="rxrreelImg" height=200 width=200 src=""></a>
+			 onmouseover="showName('Route by Route - Sizzle Reel','rxrreelImg','RBRcolor.jpg','movieDescription','rxrreelDescription')" 
+			 onmouseout="removeName('rxrreelImg','RBRbw.jpg','movieDescription')">
+			 <img name="rxrreelImg"  width=200 src="images/RBRbw.jpg"></a>
 			 
-			 <a href="#" onclick="filmClicked('adweekNewMovel','Adweek New Model Agency')" 
-			 onmouseover="showName('Adweek New Model Agency','adweekNewModel','SRcolor.jpg','movieDescriptionForEditing','adweekNewModelDescription') 
-			 onmouseout="removeName('adweekNewModelImg','adweekNewModel.jpg','movieDescriptionForEditing')">
-			 <img name="adweekNewModelImg" height=200 width=200 src="images/SRbw.jpg"></a>
+			 <a href="#" onclick="filmClicked('adweekNewModel','Adweek New Model Agency')" 
+			 onmouseover="showName('Adweek New Model Agency','adweekNewModelImg','SRcolor.jpg','movieDescription','adweekNewModelDescription')"
+			 onmouseout="removeName('adweekNewModelImg','SRbw.jpg','movieDescription')">
+			 <img name="adweekNewModelImg"  width=200 src="images/SRbw.jpg"></a>
 			 
-			 <a href="#" onclick="filmClicked('adweekSixQues','Adweek Six Questions')" 
-			 onmouseover="showName('AdWeek Six Questions','adweekSixQues','Robcolor.jsp','movieDescriptionForEditing','adweekSixQuestDescription') 
-			 onmouseout="removeName('adweekSixQues','Robbw.jpg',movieDescriptionForEditing'')">
-			 <img name="adweekSixQuesImg" height=200 width=200 src="images/Robbw.jpg"></a>
+			 <a href="#" onclick="filmClicked('adweekSixQues','Adweek Six Questions with Rob Schwartz')" 
+			 onmouseover="showName('Adweek Six Questions with Rob Schwartz','adweekSixQuesImg','Robcolor.jpg','movieDescription','adweekSixQuesDescription')" 
+			 onmouseout="removeName('adweekSixQuesImg','Robbw.jpg','movieDescription')">
+			 <img name="adweekSixQuesImg"  width=200 src="images/Robbw.jpg"></a>
 			 
-			 <a href="#" onclick="filmClicked('adweekDave','Adweek Size Questions')"
-			 onmouseover="showName('Adweek Six Questions','CarLynchcolor.jpg','movieDescriptionForEditing','adweekDave') 
-			 onmouseout="removeName('Adweek Six Questions','CarLynchbw.jpg','movieDescriptionForEditing')">
-			 <img name="adweekDave" height=200 width=200 src="images/CarLynchbw.jpg"></a>
+			 <a href="#" onclick="filmClicked('adweekDave','Adweek Six Questions with Dave Dammman')"
+			 onmouseover="showName('Adweek Six Questions with Dave Damman','adweekDaveImg','CarLynchcolor.jpg','movieDescription','adweekDaveDescription')" 
+			 onmouseout="removeName('adweekDaveImg','CarLynchbw.jpg','movieDescription')">
+			 <img name="adweekDaveImg" width=200 src="images/CarLynchbw.jpg"></a>
 			 
  			 <div id="movieDescription" class="description"></div>
 			 </br>
@@ -131,7 +133,7 @@
 			 <a href="#" onclick="filmClicked('advice','Advice')" 
 			 			onmouseover="showName('Advice','adviceImg','Advicecolor.jpg','movieDescriptionForDirection','adviceDescription')" 
 			 			onmouseout="removeName('adviceImg','Advicebw.jpg','movieDescriptionForDirection')" >
-			 <img name="adviceImg" height=200 width=200 src="images/Advicebw.jpg"></a>
+			 <img name="adviceImg" hwidth=200 src="images/Advicebw.jpg"></a>
 			 
 			 <div id="movieDescriptionForDirection" class="description"></div>
 			 
@@ -309,9 +311,9 @@
 			</br>
 			<div id="adviceDescription" class="description">
 				Writer/Director/Editor</br>
-				Short File
+				Short Film
 				</br>
-				<img src="images/Advicecolor.jpg">
+				<img width="400" height="225" src="images/Advicecolor.jpg">
 				</br>
 				</br>
 					Sometimes breaking up is easier with a gun.
@@ -407,7 +409,7 @@
 			</p>
 			<div id="rxrEp1Description" class="description"> 
 				Cinematographer/Editor</br>
-				Web Series Sizzle Reel 
+				Web Series
 				</br>
 				</br>
 				Episode 1: Charity Rose Thielen
@@ -420,7 +422,7 @@
 				<iframe id="rxrscreelVid" class="vim" src="http://player.vimeo.com/video/45451132?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  
 				width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
-			<div id="rxrscreelDescription" class="description"> 
+			<div id="rxrreelDescription" class="description"> 
 				Cinematographer/Editor</br>
 				Web Series Sizzle Reel 
 				</br>
@@ -434,7 +436,7 @@
 			<p>
 				<iframe id="adweekNewModelVid" class="vim" src="http://player.vimeo.com/video/459837828api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
-			<div id="adweekNewModelDescription" class="description"> 
+			<div id="adweekNewModelDescription" class="description">   
 				Cinematographer/Editor</br>
 				Online Series
 				</br>
@@ -448,7 +450,7 @@
 			<p>
 				<iframe id="adweekSixQuesVid" class="vim" src="http://player.vimeo.com/video/47371370?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
-			<div id="adweekSiXQuesDescription" class="description"> 
+			<div id="adweekSixQuesDescription" class="description"> 
 				Cinematographer/Editor</br>
 				Online Series 
 				</br>
@@ -456,13 +458,27 @@
 				Piece Produced for Adweek featuring Rob Schwartz. 
 			</div>
 	</div>
-	
-	<div id="aroma" class="ui-widget-content ui-corner-all">
+		
+	<div id="adweekSixDave" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<iframe id="adweekSixQuesVid" class="vim" src="http://player.vimeo.com/video/49785586?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<iframe id="adweekSixDaveVid" class="vim" src="http://player.vimeo.com/video/44003476?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
-			<div id="adweekSiXQuesDescription" class="description"> 
+			<div id="adweekDaveDescription" class="description"> 
+				Cinematographer/Editor</br>
+				Online Series 
+				</br>
+				</br>
+				Piece Produced for Adweek featuring Dave Damman. 
+			</div>
+	</div>
+	
+		<div id="aroma" class="ui-widget-content ui-corner-all">
+		<h3 class = "ui-widget-content ui-corner-all"></h3>
+			<p>
+				<iframe id="aromaVid" class="vim" src="http://player.vimeo.com/video/49785586?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</p>
+			<div id="aromaDescription" class="description"> 
 				Cinematographer</br>
 				Web Commerical
 				</br>
@@ -471,22 +487,6 @@
 			</div>
 	</div>
 	
-	
-	
-	
-	<div id="adweekSixDave" class="ui-widget-content ui-corner-all">
-		<h3 class = "ui-widget-content ui-corner-all"></h3>
-			<p>
-				<iframe id="adweekSixDaveVid" class="vim" src="http://player.vimeo.com/video/44003476?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-			</p>
-			<div id="adweekSixDaveDescription" class="description"> 
-				Cinematographer/Editor</br>
-				Online Series 
-				</br>
-				</br>
-				Piece Produced for Adweek featuring Dave Damman. 
-			</div>
-	</div>
 	
 	
 	
