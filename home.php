@@ -92,10 +92,15 @@
 			 onmouseout="removeName('adweekSixQuesImg','Robbw.jpg','movieDescription')">
 			 <img name="adweekSixQuesImg"  width=200 src="images/Robbw.jpg"></a>
 			 
-			 <a href="#" onclick="filmClicked('adweekDave','Adweek Six Questions with Dave Dammman')"
+			 <a href="#" onclick="filmClicked('adweekSixDave','Adweek Six Questions with Dave Damman')"
 			 onmouseover="showName('Adweek Six Questions with Dave Damman','adweekDaveImg','CarLynchcolor.jpg','movieDescription','adweekDaveDescription')" 
 			 onmouseout="removeName('adweekDaveImg','CarLynchbw.jpg','movieDescription')">
 			 <img name="adweekDaveImg" width=200 src="images/CarLynchbw.jpg"></a>
+			 
+			 <a href="#" onclick="filmClicked('aroma','Aromachology')"
+			 onmouseover="showName('Aromachology','aromaImg','aromachologycolor.jpg','movieDescription','aromaDescription')" 
+			 onmouseout="removeName('aromaImg','aromachologybw.jpg','movieDescription')">
+			 <img name="aromaImg" width=200 src="images/aromachologybw.jpg"></a>
 			 
  			 <div id="movieDescription" class="description"></div>
 			 </br>
@@ -184,6 +189,7 @@
 					src="http://player.vimeo.com/video/20112538?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
 					width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen><
 					/iframe><p><a href="http://vimeo.com/20112538"></a> -->	
+			<img width="400" height="225" src="images/demon fighters color.jpg">
 			<div id="demonFightersDescription" class="description">
 			Director/Producer</br>
 			Feature Documentary</br>
@@ -307,13 +313,13 @@
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
 			</br>
-				<!-- IMAGE GOES HERE -->
+				<img width="400" height="225" src="images/Advicecolor.jpg">
 			</br>
 			<div id="adviceDescription" class="description">
 				Writer/Director/Editor</br>
 				Short Film
 				</br>
-				<img width="400" height="225" src="images/Advicecolor.jpg">
+				
 				</br>
 				</br>
 					Sometimes breaking up is easier with a gun.
@@ -405,7 +411,15 @@
 	<div id="rxrEp1" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<!-- ADD YOUTUBE VIDEO -->
+				<div id="ytplayer">
+			 	<p>You will need Flash 8 or better to view content</p>
+			 </div>
+			<script type="text/javascript">
+				var params = {allowScriptAccess:"always"};
+				var atts = {id: "myytplayer"}
+				swfobject.embedSWF(
+				"http://www.youtube.com/v/XhxA3LTPeUo?enablejsapi=1&playerapiid=ytplayer", "ytplayer", "560", "315", "8", null, null, params,atts);
+			</script>
 			</p>
 			<div id="rxrEp1Description" class="description"> 
 				Cinematographer/Editor</br>
@@ -434,7 +448,7 @@
 	<div id="adweekNewModel" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<iframe id="adweekNewModelVid" class="vim" src="http://player.vimeo.com/video/459837828api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<iframe id="adweekNewModelVid" class="vim" src="http://player.vimeo.com/video/49737828?api=1</iframe>" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
 			<div id="adweekNewModelDescription" class="description">   
 				Cinematographer/Editor</br>
@@ -448,7 +462,7 @@
 	<div id="adweekSixQues" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<iframe id="adweekSixQuesVid" class="vim" src="http://player.vimeo.com/video/47371370?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<iframe class="vim" src="http://player.vimeo.com/video/47371370?api=1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
 			<div id="adweekSixQuesDescription" class="description"> 
 				Cinematographer/Editor</br>
@@ -462,7 +476,7 @@
 	<div id="adweekSixDave" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<iframe id="adweekSixDaveVid" class="vim" src="http://player.vimeo.com/video/44003476?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<iframe class="vim" src="http://player.vimeo.com/video/44003476?api=1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
 			<div id="adweekDaveDescription" class="description"> 
 				Cinematographer/Editor</br>
