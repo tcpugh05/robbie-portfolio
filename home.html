@@ -12,11 +12,6 @@
 		<script type="text/javascript" src="js/froogaloop.js"></script>
 		<script type="text/javascript" src="js/froogaloop.min.js"></script>
 		<script type="text/javascript" src="js/swfobject.js"></script>
-		
-		<!-- JS custom files -->
-		<script type="text/javascript" src="js/clickedOn.js"></script>
-		<script type="text/javascript" src="js/hoverOver.js"></script>
-		
 		<!-- CSS Style sheets -->
 		<link rel = "stylesheet" type="text" href="css/style.css"/>
 		<link rel = "stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css"/>
@@ -50,13 +45,12 @@
 	<div id="about" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			Robert Gregson is a NYC-based filmmaker. His films have been featured at Anthology Film Archives, Avignon Film
-			 Festival, University of Mary Washington Film Festival, and the Rappahannock Independent Film Festival. He 
-			 writes, directs, edits, and shoots short and long-form media.
+			Robert Gregson is a NYC-based filmmaker. His films have been featured at Anthology Film Archives, Avignon Film Festival, 
+			and the Rappahannock Independent Film Festival. He writes, directs, edits, and shoots short and long-form media for clients 
+			such as Adweek, Anheuser-Busch, the Bnai Zion Foundation, as well as many independent businesses and organizations in NYC.
 			</br></br>
-			Currently, he is in postproduction on Demon Fighters, a feature documentary he produced and directed with 
-			Shoebox Story Productions and is also in post on Just a Phase, a short documentary. He recently finished a 
-			fictional short film, Advice, and is in preproduction on his next short. 
+			Currently, he is in postproduction on Demon Fighters, a feature documentary he produced and directed with Shoebox Story Productions. 
+			He recently finished a fictional short film, Advice, and a short documentary, Just a Phase, and is in preproduction on his next short.
 		</p>
 		</br>
 	</div>
@@ -64,12 +58,8 @@
 	<div id="cinematography" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			
-			<a href="#" onclick="filmClicked('aroma','Aromachology')"
-			 onmouseover="showName('Aromachology','aromaImg','aromachologycolor.jpg','movieDescription','aromaDescription')" 
-			 onmouseout="removeName('aromaImg','aromachologybw.jpg','movieDescription')">
-			 <img name="aromaImg" width=200 src="images/aromachologybw.jpg"></a>
-			 			 
+					
+
 		 	 <a href="#" 
 		 	onclick="filmClicked('rxrEp1','Route by Route - Episode 1')" 
 		 	onmouseover="showName('Route By Route - Episode 1','rxrEp1Img','charitycolor.jpg','movieDescription','rxrEp1Description')" 
@@ -108,39 +98,65 @@
 	<div id="direction" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			
-						 
 			<a href="#" onclick="filmClicked('advice','Advice')" 
 			onmouseover="showName('Advice','adviceImg','Advicecolor.jpg','movieDescriptionForDirection','adviceDescription')" 
  			onmouseout="removeName('adviceImg','Advicebw.jpg','movieDescriptionForDirection')" >
 			 <img name="adviceImg" hwidth=200 src="images/Advicebw.jpg"></a>
 			 
+			 <a href="#" onclick="filmClicked('DirectionVideoDescription2','Adweek New Model Agency: Translation')"
+			 onmouseover="showName('Adweek New Model Agency: Translation','DirectionImg2','translationCOLOR.png','movieDescriptionForDirection','DirectionDescription2')" 
+			 onmouseout="removeName('DirectionImg2','translationBW.png','movieDescription')">
+			 <img name="DirectionImg2" width=200 src="images/translationBW.png"></a>
+			
+			<a href="#" onclick="filmClicked('DirectionVideoDescription1','Just a Phase')"
+			 onmouseover="showName('Just a Phrase','DirectionImg1','justaphaseCOLOR.png','movieDescriptionForDirection','DirectionDescription1')" 
+			 onmouseout="removeName('DirectionImg1','justaphaseBW.png','movieDescription')">
+			 <img name="DirectionImg1" width=200 src="images/justaphaseBW.png"></a>
+			 
+ 			<a href="#" onclick="filmClicked('aroma','Aromachology')"
+			 onmouseover="showName('Aromachology','aromaImg','aromachologycolor.jpg','movieDescriptionForDirection','aromaDescription')" 
+			 onmouseout="removeName('aromaImg','aromachologybw.jpg','movieDescription')">
+			 <img name="aromaImg" width=200 src="images/aromachologybw.jpg"></a>
+						 
+			 <a href="#" onclick="filmClicked('DirectionVideoDescription3','ALLEY NYC')"
+			 onmouseover="showName('ALLEY NYC','DirectionImg3','alleyCOLOR.png','movieDescriptionForDirection','DirectionDescription3')" 
+			 onmouseout="removeName('DirectionImg3','alleyBW.png','movieDescription')">
+			 <img name="DirectionImg3" width=200 src="images/alleyBW.png"></a>
+			 		 
+			 <a href="#" onclick="filmClicked('basedOnBefore','Dave Beck-Based on Before')" onmouseover="showName('Dave Beck-Based on Before','bob','based on before color.JPG','movieDescriptionForDirection','basedOnBeforeDescription')" onmouseout="removeName('bob','based on before bw.JPG','movieDescriptionForDirection')">
+			 <img name="bob" heigh=200 width=200 src="images/based on before bw.JPG"></a>
+			 			 
+			 <a href="#" onclick="filmClicked('DirectionVideoDescription4','Validation Board')"
+			 onmouseover="showName('Validation Board','DirectionImg4','ValBoardCOLOR.png','movieDescriptionForDirection','DirectionDescription4')" 
+			 onmouseout="removeName('DirectionImg4','ValBoardBW.png','movieDescription')">
+			 <img name="DirectionImg4" width=200 src="images/ValBoardBW.png"></a>						
 			 
 			<a href="#" onclick="filmClicked('demonFighters','Demon Fighters')" onmouseover="showName('Demon Fighters','df','demon fighters color.jpg','movieDescriptionForDirection','demonFightersDescription')" onmouseout="removeName('df','demon fighters bw.jpg','movieDescriptionForDirection')">
 			 <img name="df" heigh=200 width=200 src="images/demon fighters bw.jpg"></a> 
-		 
-			 <a href="#" onclick="filmClicked('basedOnBefore','Dave Beck-Based on Before')" onmouseover="showName('Dave Beck-Based on Before','bob','based on before color.JPG','movieDescriptionForDirection','basedOnBeforeDescription')" onmouseout="removeName('bob','based on before bw.JPG','movieDescriptionForDirection')">
-			 <img name="bob" heigh=200 width=200 src="images/based on before bw.JPG"></a>
-			 
+		 		 
 			 <a href="#" onclick="filmClicked('alderRoads','Dave Beck-Alder Roads')" onmouseover="showName('Dave Beck-Alder Roads','alderRoads','alder roads color.JPG','movieDescriptionForDirection','alderRoadsDescription')" onmouseout="removeName('alderRoads','alder roads bw.JPG','movieDescriptionForDirection')">
 			 <img name="alderRoads" heigh=200 width=200 src="images/alder roads bw.JPG"></a>
+			 
+ 			 <a href="#" onclick="filmClicked('atEveryTurn','At Every Turn: The Work of Bob Gregson')" onmouseover="showName('At Every Turn: The Work of Bob Gregson','bobGreg','at every turn color.JPG','movieDescriptionForDirection','atEveryTurnDescription')" onmouseout="removeName('bobGreg','at every turn bw.JPG','movieDescriptionForDirection')">
+			 <img name="bobGreg" heigh=200 width=200 src="images/at every turn bw.JPG"></a>
+			 
+ 			  <a href="#" onclick="filmClicked('jw','Justice Woman')" 
+		  		onmouseover="showName('Justice Woman','jwImg','justicewomanCOLOR.jpg','movieDescriptionForDirection','jwDescription')" 
+			  	onmouseout="removeName('jwImg','justicewomanBW.jpg','movieDescriptionForDirection')">			 
+			 <img name="jwImg" heigh=200 width=200 src="images/justicewomanBW.jpg"></a>
 			 
 			 <a href="#" onclick="filmClicked('noLand','No Land Trailer')" onmouseover="showName('No Land Trailer','noLand','no land color.JPG','movieDescriptionForDirection','noLandDescription')" onmouseout="removeName('noLand','no land bw.JPG','movieDescriptionForDirection')">
 			 <img name="noLand" heigh=200 width=200 src="images/no land bw.JPG"></a>
 			 
-			 <a href="#" onclick="filmClicked('atEveryTurn','At Every Turn: The Work of Bob Gregson')" onmouseover="showName('At Every Turn: The Work of Bob Gregson','bobGreg','at every turn color.JPG','movieDescriptionForDirection','atEveryTurnDescription')" onmouseout="removeName('bobGreg','at every turn bw.JPG','movieDescriptionForDirection')">
-			 <img name="bobGreg" heigh=200 width=200 src="images/at every turn bw.JPG"></a>
+
 			 
-			 <a href="#" onclick="filmClicked('kristianRoad','Kristian Rose EPK')" onmouseover="showName('Kristian Rose EPK','EPK','kristian rose color.JPG','movieDescriptionForDirection','kristianRoadDescription')" onmouseout="removeName('EPK','kristian rose bw.JPG','movieDescriptionForDirection')">
-			 <img name="EPK" heigh=200 width=200 src="images/kristian rose bw.JPG"></a>
+		<!--	 <a href="#" onclick="filmClicked('kristianRoad','Kristian Rose EPK')" onmouseover="showName('Kristian Rose EPK','EPK','kristian rose color.JPG','movieDescriptionForDirection','kristianRoadDescription')" onmouseout="removeName('EPK','kristian rose bw.JPG','movieDescriptionForDirection')">
+			 <img name="EPK" heigh=200 width=200 src="images/kristian rose bw.JPG"></a> -->
 			 
-			 <a href="#" onclick="filmClicked('leanStart','Lean Startup Machine')" onmouseover="showName('Lean Startup Machine','LSM','lean startup machine color.JPG','movieDescriptionForDirection','leanStartUpDescription')" onmouseout="removeName('LSM','lean startup machine bw.JPG','movieDescriptionForDirection')">			 
-			 <img name="LSM" heigh=200 width=200 src="images/lean startup machine bw.JPG"></a>
+		<!--	 <a href="#" onclick="filmClicked('leanStart','Lean Startup Machine')" onmouseover="showName('Lean Startup Machine','LSM','lean startup machine color.JPG','movieDescriptionForDirection','leanStartUpDescription')" onmouseout="removeName('LSM','lean startup machine bw.JPG','movieDescriptionForDirection')">			 
+			 <img name="LSM" heigh=200 width=200 src="images/lean startup machine bw.JPG"></a> -->
 			 
-			  <a href="#" onclick="filmClicked('jw','Justice Woman')" 
-			  	onmouseover="showName('Justice Woman','jwImg','justicewomanCOLOR.jpg','movieDescriptionForDirection','jwDescription')" 
-			  	onmouseout="removeName('jwImg','justicewomanBW.jpg','movieDescriptionForDirection')">			 
-			 <img name="jwImg" heigh=200 width=200 src="images/justicewomanBW.jpg"></a>
+
 			 
 			 <div id="movieDescriptionForDirection" class="description"></div>
 			 
@@ -178,7 +194,7 @@
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
 			 Phone: 540.207.5609</br>
-			 Email: robert.gregson@gmail.com
+			 Email: robert.gregson86@gmail.com
 			</br>
 			</br>
 		</p>
@@ -219,6 +235,79 @@
 			</div>
 		</p>
 	</div>
+	
+		<div id="DirectionVideoDescription1" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all"></h3>
+		<p>
+			<iframe id="DirectionVideo1" class="vim" src="http://player.vimeo.com/video/53710637?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
+			width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+			</iframe><p><a href="http://vimeo.com/53710637"></a>
+			<div id="DirectionDescription1" class="description">
+			Director/Cinematographer/Editor</br>
+			Short Documentary</br>
+			</br>
+			</br>
+			</br>
+			A documentary chronicling the fascinating life and work of the inventive artist, Bob Gregson. 
+			</div>
+		</p>
+	</div>
+	
+	
+		<div id="DirectionVideoDescription2" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all"></h3>
+		<p>
+			<iframe id="DirectionVideo2" class="vim" src="http://player.vimeo.com/video/50553582?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
+			width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+			</iframe><p><a href="http://vimeo.com/50553582"></a>
+			<div id="DirectionDescription2" class="description">
+			Director/Cinematographer/Editor</br>
+			Online Series</br>
+			</br>
+			</br>
+			</br>
+			Piece produced for Adweek featuring Translation's Steve Stoute.
+			</div>
+		</p>
+	</div>
+	
+	
+		<div id="DirectionVideoDescription3" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all"></h3>
+		<p>
+			<iframe id="DirectionVideo3" class="vim" src="http://player.vimeo.com/video/51707012?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
+			width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+			</iframe><p><a href="http://vimeo.com/51707012"></a>
+			<div id="DirectionDescription3" class="description">
+			Director/Cinematographer/Editor</br>
+			Commercial</br>
+			</br>
+			</br>
+			</br>
+			 Commerical for ALLEY NYC, a popular co-working space in midtown Manhattan. 
+			</div>
+		</p>
+	</div>
+	
+		<div id="DirectionVideoDescription4" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all"></h3>
+		<p>
+			<iframe id="DirectionVideo4" class="vim" src="http://player.vimeo.com/video/50787499?api=1&amp;title=0&amp;byline=0&amp;portrait=0" 
+			width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+			</iframe><p><a href="http://vimeo.com/50787499"></a>
+			<div id="DirectionDescription4" class="description">
+			Director/Editor</br>
+			Commercial </br>
+			</br>
+			</br>
+			</br>
+			Commerical for Lean Startup Machine's Validation Board launch 
+			</div>
+		</p>
+	</div>
+	
+	
+	
 	<div id="alderRoads" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
@@ -364,14 +453,14 @@
 	<div id="bnaiZion" class="ui-widget-content ui-corner-all">
 		<h3 class="ui-widget-header ui-corner-all"></h3>
 		<p>
-			 <div id="ytplayer">
+			 <div id="ytBnaiPlayer">
 			 	<p>You will need Flash 8 or better to view content</p>
 			 </div>
 			<script type="text/javascript">
 				var params = {allowScriptAccess:"always"};
 				var atts = {id: "myytplayer"}
 				swfobject.embedSWF(
-				"http://www.youtube.com/v/x6jsnaYsh0I&enablejsapi=1&playerapiid=ytplayer", "ytplayer", "560", "315", "8", null, null, params,atts);
+				"http://www.youtube.com/v/x6jsnaYsh0I&enablejsapi=1&playerapiid=ytBnaiPlayer", "ytBnaiPlayer", "560", "315", "8", null, null, params,atts);
 			</script>
 			</br>		
 			</br>
@@ -419,14 +508,14 @@
 	<div id="rxrEp1" class="ui-widget-content ui-corner-all">
 		<h3 class = "ui-widget-content ui-corner-all"></h3>
 			<p>
-				<div id="ytplayer">
+				<div id="ytrxrPlayer">
 			 	<p>You will need Flash 8 or better to view content</p>
 			 </div>
 			<script type="text/javascript">
 				var params = {allowScriptAccess:"always"};
-				var atts = {id: "myytplayer"}
+				var atts2 = {id: "myytplayer2"}
 				swfobject.embedSWF(
-				"http://www.youtube.com/v/XhxA3LTPeUo?enablejsapi=1&playerapiid=ytplayer", "ytplayer", "560", "315", "8", null, null, params,atts);
+				"http://www.youtube.com/v/XhxA3LTPeUo?enablejsapi=1&playerapiid=ytrxrPlayer", "ytrxrPlayer", "560", "315", "8", null, null, params,atts2);
 			</script>
 			</p>
 			<div id="rxrEp1Description" class="description"> 
@@ -502,7 +591,7 @@
 				<iframe id="aromaVid" class="vim" src="http://player.vimeo.com/video/49785586?api=1&amp;title=0&amp;byline=0&amp;portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</p>
 			<div id="aromaDescription" class="description"> 
-				Cinematographer</br>
+				Director/Cinematographer</br>
 				Web Commerical
 				</br>
 				</br>
@@ -518,6 +607,9 @@
 </div>
 </div>
 <script>
+var ytplayer; //Youtube player for page
+var ytplayer2; //Seconds youtube player
+
 	$("#about").hide()
 	$("#shorts").hide()
 	$("#cinematography").hide()
@@ -546,7 +638,157 @@
 	$("#adweekNewModel").hide()
 	$("#adweekSixQues").hide()
 	$("#adweekSixDave").hide()
-	$(function() {$("#about").show();});
+	$("#DirectionVideoDescription1").hide(); 
+	$("#DirectionVideoDescription2").hide();
+	$("#DirectionVideoDescription3").hide();
+	$("#DirectionVideoDescription4").hide();
+	$(function() {$("#about").show();});	
+	
+	
+	
+	/* Hover Over Functions */
+	function showName(textToBeDisplayedAtTop,imgNameId,fileURLForImage,descriptionToWriteTo,descriptionReadFrom)
+	{
+	var theId = new String(imgNameId);
+	$("#test").text(' '+ textToBeDisplayedAtTop); 
+	document.images[theId].src= 'images/'+fileURLForImage;
+	$("#"+descriptionToWriteTo).html($("#"+descriptionReadFrom).html());	
+	}
+
+function removeName(imgName,fileURL,descriptionToWriteTo)
+	{	
+	var theId = new String(imgName);
+	document.images[theId].src='images/'+fileURL;
+	$("#test").text('');
+	$("#"+descriptionToWriteTo).text('');
+	}
+
+	/* Clicked on Functions */
+
+$(function() {
+		$( "#accordion" ).accordion();
+		$("#work").accordion({autoHeight:false});
+	});
+function killVids(){
+	var players;
+	players=$('.vim');
+	for(var i=0;i<players.length;i++){
+		$f(players[i]).api('unload');
+	}
+	
+	//only fool around w/ the youtube player API if IE. Everything but IE unembeddeds the video
+//	if (navigator.appVersion.indexOf("MSIE") != -1)
+//	{
+		if(ytplayer && typeof ytplayer.pauseVideo !== 'undefined'){
+			ytplayer.pauseVideo();
+		}
+		if(ytplayer2 && typeof ytplayer2.pauseVideo !== 'undefined'){
+			ytplayer2.pauseVideo(); 
+		}
+	//}
+
+}
+	
+function onYouTubePlayerReady(playerId)
+{
+//	console.log('player read '+playerId)
+	if (playerId == 'ytBnaiPlayer')
+	{
+	//	console.log('set bnai');
+		ytplayer = document.getElementById("myytplayer"); 
+	}
+	else if (playerId == 'ytrxrPlayer')
+	{
+//		console.log('set rxr'); 
+		ytplayer2 = document.getElementById("myytplayer2");
+	}
+}
+
+
+/*
+ * Called when a section on the left sidebar is clicked
+ */
+function sideBarClicked(l_strDivID)
+{
+	$("#about").hide()
+	$("#shorts").hide()
+	$("#cinematography").hide()
+	$("#direction").hide()
+	$("#editing").hide()
+	$("#bnaiZionVillage").hide()
+	$("#contact").hide()
+	$("#description").hide()
+	$("#demonFighters").hide()
+	$("#basedOnBefore").hide()
+	$("#alderRoads").hide()
+	$("#noLand").hide()
+	$("#atEveryTurn").hide()
+	$("#kristianRoad").hide() 
+	$("#editingReel").hide()
+	$("#serbology").hide()
+	$("#bnaiZion").hide()
+	$("#cinematographyReel").hide()
+	$("#leanStart").hide()
+	$("#levoGetMoving").hide()
+	$("#jw").hide()
+	$("#advice").hide()
+	$("#aroma").hide()
+	$("#rxrscreel").hide()
+	$("#rxrEp1").hide()
+	$("#rxrreel").hide()
+	$("#adweekNewModel").hide()
+	$("#adweekSixQues").hide()
+	$("#adweekSixDave").hide()
+	$("#DirectionVideoDescription1").hide(); 
+	$("#DirectionVideoDescription2").hide();
+	$("#DirectionVideoDescription3").hide();
+	$("#DirectionVideoDescription4").hide();
+	$("#permTitle").text('')
+	killVids(); 
+	$( "#"+l_strDivID ).show("slide",{direction:"right"})
+}
+
+function filmClicked(divID, textToBeDisplayedAtTop)
+{
+	$("#about").hide()
+	$("#shorts").hide()
+	$("#cinematography").hide()
+	$("#direction").hide()
+	$("#editing").hide()
+	$("#contact").hide()
+	$("#demonFighters").hide()
+	$("#basedOnBefore").hide()
+	$("#alderRoads").hide()
+	$("#jw").hide()
+	$("#bnaiZionVillage").hide()
+	$("#noLand").hide()
+	$("#atEveryTurn").hide()
+	$("#kristianRoad").hide() 
+	$("#editingReel").hide()
+	$("#serbology").hide()
+	$("#bnaiZion").hide()
+	$("#levoGetMoving").hide()
+	$("#cinematographyReel").hide()
+	$("#leanStart").hide()
+	$("#advice").hide()
+	$("#aroma").hide()
+	$("#rxrscreel").hide()
+	$("#rxrEp1").hide()
+	$("#rxrreel").hide()
+	$("#adweekNewModel").hide()
+	$("#adweekSixQues").hide()
+	$("#adweekSixDave").hide()
+	$("#DirectionVideoDescription1").hide(); 
+	$("#DirectionVideoDescription2").hide();
+	$("#DirectionVideoDescription3").hide();
+	$("#DirectionVideoDescription4").hide();
+	killVids(); 
+	$( "#"+divID).show("explode");
+	$("#test").text('');
+	$("#permTitle").text(textToBeDisplayedAtTop)
+	
+}
+
 	
 	</script>
 </body>
